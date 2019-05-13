@@ -14,4 +14,13 @@ Ensure that your user account includes the required privileges.
 
 To deploy your app with the gcloud tool, you must download, install, and initialize the Google Cloud SDK:
 
-3) Once you create the Project --> Go to the Project-->Create the Folder where you are going to place your python files and templates
+3) Once you create the Project --> Go to the Project-->Create the Folder where you are going to place your python files and templates files(html files).
+
+4) You need to create "app.yaml" file where you will mention the all the other dependencies libraries to be loaded into your application. 
+
+5) To deploy your app to App Engine, you run the gcloud app deploy command from within the root directory of your application (from the console)
+where your configuration files are located, for example app.yaml.You will receive verification via the command line as each service is successfully deployed.
+
+6) Congratulations your application is now deployed and you will get the website URL .
+
+More details can be found here : https://cloud.google.com/eclipse/docs/deploying
