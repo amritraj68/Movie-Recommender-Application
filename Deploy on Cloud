@@ -1,0 +1,17 @@
+Deploying a Python Application on Google cloud console:
+
+The steps of creating a new App Engine app in the Google Cloud Platform Console, authenticating with Google, and deploying your project to App Engine
+
+Deploy your app to upload and run it on App Engine. When you deploy your apps, you create versions of those apps and their corresponding services in App Engine. You can deploy entire apps, including all the source code and configuration files, or you can deploy and update individual versions or configuration files.
+
+To programmatically deploy your apps, use the Admin API.
+
+1) Sign into the Google cloud Console and Create new GCP App Engine
+
+2)The Owner of the GCP project must create the App Engine application.
+
+Ensure that your user account includes the required privileges.
+
+To deploy your app with the gcloud tool, you must download, install, and initialize the Google Cloud SDK:
+
+3) Once you create the Project --> Go to the Project-->Create the Folder where you are going to place your python files and templates
