@@ -1,0 +1,22 @@
+<!doctype html>
+<link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+
+<a href="/">Homepage</a>
+
+<div class="center-on-page">  
+
+     <h1>Searching Movies ....</h1>
+
+           <form action="process" method="post">
+
+  <input type="text" id="username" name="username" style="width:96%;height:90px;background-color:gold;color:olive;border:none;padding:2%;font:22px/30px -serif;"><br>
+
+<input type="submit" value="Submit" style="background-color:yellowgreen;color:white;padding:5px;font-size:18px;border:none;padding:8px;">
+
+</form>
+
+ 
+{% for table in tables %}
+    <h2>{{titles[loop.index]}}</h2>
+    {{ table|safe }}
+  {% endfor %} 

@@ -1,0 +1,16 @@
+<!doctype html>
+<link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}" >
+
+<a href="/">Homepage</a>
+
+<h1>Classify Movies</h1>
+
+           <form action="classify" method="post">
+
+              <input type="text" id="classifying" name="classifying" style="width:96%;height:90px;background-color:gold;color:olive;border:none;padding:2%;font:22px/30px -serif;"><br>
+
+              <input type="submit" value="Classify" style="background-color:yellowgreen;color:white;padding:5px;font-size:18px;border:none;padding:8px;">
+
+         </form>
+
+{{myLists}}

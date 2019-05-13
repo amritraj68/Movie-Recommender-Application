@@ -1,0 +1,18 @@
+<!doctype html>
+<link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+
+<a href="/">Homepage</a>
+<div class="center-on-page">  
+
+<h1>Recommend Movies based on users movie name </h1>
+
+         <form action="/recommend" method="POST" autocomplete="on">
+          Enter Movie name:<input type="text" name="recommending" id="recommending" style="width:96%;height:90px;background-color:gold;color:olive;border:none;padding:2%;font:22px/30px -serif;"><br>
+
+  <input type="submit" value="Recommend" style="background-color:yellowgreen;color:white;padding:5px;font-size:18px;border:none;padding:8px;">
+
+</form>
+
+<h2>Recommended Movie as per your choice is as follows</h2>
+
+{{myLists}}
